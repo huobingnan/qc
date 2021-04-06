@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="lab.callback.qc.view.MainView">
+  <grid id="27dc6" binding="mainPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="8" y="20" width="987" height="496"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="6c993" binding="leftPane" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="West"/>
+        <properties>
+          <alignmentX value="1.0"/>
+          <focusable value="false"/>
+          <font name="Microsoft YaHei" size="14" style="0"/>
+          <preferredSize width="400" height="293"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="26376" binding="paramPane" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none" title="参数控制"/>
+            <children>
+              <component id="c9d25" class="javax.swing.JLabel" binding="lbl3">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="平均相似度"/>
+                </properties>
+              </component>
+              <component id="f557" class="javax.swing.JSpinner" binding="Similar_Spinner">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="150" height="-1"/>
+                    <preferred-size width="150" height="-1"/>
+                    <maximum-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                </properties>
+              </component>
+              <component id="485e3" class="javax.swing.JLabel" binding="lbl4">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="相似度标准差"/>
+                </properties>
+              </component>
+              <component id="93397" class="javax.swing.JSpinner" binding="SD_Spinner">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="150" height="-1"/>
+                    <preferred-size width="150" height="-1"/>
+                    <maximum-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                </properties>
+              </component>
+              <component id="3c0b7" class="javax.swing.JLabel" binding="lbl5">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="能量差"/>
+                </properties>
+              </component>
+              <component id="b2853" class="javax.swing.JSpinner" binding="Gap_Spinner">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="150" height="-1"/>
+                    <preferred-size width="150" height="-1"/>
+                    <maximum-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="14" style="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a44b5" binding="logPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none" title="运行日志"/>
+            <children/>
+          </grid>
+          <component id="bf3b3" class="javax.swing.JButton" binding="Run_Button">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="运行"/>
+            </properties>
+          </component>
+          <grid id="72bfd" binding="inputPane" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none" title="文件输入"/>
+            <children>
+              <component id="e3b55" class="javax.swing.JLabel" binding="lbl11">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="JSON1"/>
+                </properties>
+              </component>
+              <component id="bf496" class="javax.swing.JTextField" binding="JSON_1_Field">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <toolTipText value="双击查看详情"/>
+                </properties>
+              </component>
+              <component id="9fbf3" class="javax.swing.JButton" binding="JSON_1_Open_Button">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="打开"/>
+                </properties>
+              </component>
+              <component id="659d5" class="javax.swing.JLabel" binding="lbl12">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="JSON2"/>
+                </properties>
+              </component>
+              <component id="3dbb9" class="javax.swing.JTextField" binding="JSON_2_Field">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <requestFocusEnabled value="true"/>
+                  <toolTipText value="双击查看详情"/>
+                </properties>
+              </component>
+              <component id="9809c" class="javax.swing.JButton" binding="JSON_2_Open_Button">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="打开"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="e9b94" binding="centralPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="e4b6c" binding="statusPane" layout-manager="FlowLayout" hgap="30" vgap="5" flow-align="2">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="70ec8" class="javax.swing.JLabel" binding="Status_Label">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="6fb03" class="javax.swing.JLabel" binding="Default_Lable">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="11"/>
+              <text value="QC(v1.1.0)"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
